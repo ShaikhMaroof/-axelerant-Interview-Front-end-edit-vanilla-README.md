@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("");
+
+  min-height: 380px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  
+  right: 10;
+  margin-top:20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn1 {
+  background-color: red;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 35.2%;
+  margin-left:16px;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn1:hover {
+  opacity: 1;
+}
+</style>
+</head>
+<body>
+
+<h2>Tell us how we can improve our society</h2>
+<div class="bg-img">
+  <form action="" class="container">
+    <h2>Type in Your Idea!!!</h2>
+
+    <label for="Name"><b>Name</b></label>
+    <input type="text" placeholder="Enter Your Name" name="name1" id="aga" required>
+
+    <label for="Suggest"><b>Suggestion</b></label>
+    <input type="text" placeholder="Suggest something" name="sugg" required>
+    <form action="Improvements.html">
+    <button type="submit" onclick="click2()" class="btn">OK</button>
+	</form>
+		
+  </form>
+   <form action="HOME PAGE.html">
+    <button type="submit" onclick="click3()" class="btn1">Back to Home</button>
+	</form>
+  
+</div>
+
+
+</body>
+</html>
+		<script type="text/javascript" language="JavaScript">
+			function click2()
+			{
+			var bbc;
+			bbc=document.getElementById("aga").value;
+			if(bbc == "")
+			{
+			alert("You cannot leave fields blank!");
+			}
+			else
+			{
+				alert("Thankyou! We'll work on it.");
+			}
+			}
+			
+			function click3()
+			{
+			
+			}
+
+		</script>

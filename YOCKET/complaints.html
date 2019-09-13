@@ -1,0 +1,74 @@
+ <body>
+ <div>
+ <img style="height:637;  width:1350; z-index:0;"
+ src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT40Mo_6KNp3CNhp0DitgjyAxOe8SdTcxFCdks6478dGKbmJx1W"/>
+<div style="z-index:20;margin-top:-500px;margin-left:400px; font-size:25px; color:Navy;text-align:left">
+<b>Name</b> &nbsp;&nbsp;&nbsp;&nbsp;
+<input style="margin-left:25px; background-color:white; border-radius:5px; z-index:210" type="text" id="nme"/>
+
+
+<br>
+<b>Age</b> &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+<input style="margin-left:25px;border-radius:5px;" type="number" id="age"/>
+
+<br>
+<b>Room No</b> &nbsp;
+<input style="margin-left:25px; border-radius:5px;" type="number" id="rns"/><br>
+
+<b>Complaint Type</b> &nbsp;
+<select style="width:173px;height:22px;border-radius:5px; margin-left:25px">
+  <option value="blank"></option>
+  <option value="1">Person</option>
+  <option value="1">Facilities</option>
+    <option value="1">Scams</option>
+	  <option value="1">Burglar</option>
+	    <option value="1">Others</option>
+  </select><br>
+
+<b>Complaint Description</b> &nbsp;
+<input style="margin-left:25px; width:400px;height:40px;border-radius:5px;margin-top:10px" type="text" name=cd id="rn"/><br>
+
+<div style="color:red; cursor:pointer; margin-left:20px; border-radius:5px">
+
+<form method="post">
+<button style="color:green;margin-top:50px;background-color:white;margin-left:35px;border-radius:10px;cursor:pointer;width:90px;height:30px;" 
+onclick="clickedButton2()"><b>Complaint</b></button>
+</form>
+
+<form  name="Add members" method="post" action="HOME PAGE.html">
+<button style="color:red; margin-top:-54px;margin-left:150px;border-radius:10px;background-color:white; cursor:pointer;height:28px;"  
+onclick="click()"><b> Back to Home </b></button>
+</form>
+
+</div>
+ </div> 
+ </body>
+ 
+ <script type="text/javascript" language="JavaScript">
+                  function click()
+				  {
+				   
+				  }
+				  function clickedButton2()
+				  {
+				    var b;
+			b=document.getElementById("age").value;
+			if(b == "")
+			{
+                 alert("Please enter all the details!!!");
+				 			 
+				 
+            }
+              else
+              {
+			  alert("Your response has been recorded");
+			  
+			  }
+				  }
+				  
+				  
+ </script>
+ 
+ 
+ 
+  
